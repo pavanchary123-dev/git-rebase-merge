@@ -3,7 +3,7 @@ resource "aws_security_group" "ec2_sg" {
   description = "Security group for SCROLLME EC2 instances"
   vpc_id      = data.aws_vpc.default.id
 
-  # HTTP
+  # HTTP&https
   ingress {
     description = "HTTP from anywhere"
     from_port   = 80
