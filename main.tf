@@ -1,6 +1,6 @@
 resource "aws_security_group" "ec2_sg" {
   name        = "scrollme-ec2-sg"
-  description = "Security group for SCROLLME EC2 instance"
+  description = "Security group for SCROLLME EC2 instances"
   vpc_id      = data.aws_vpc.default.id
 
   # HTTP
